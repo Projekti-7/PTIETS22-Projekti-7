@@ -109,6 +109,12 @@ h3 {
   border-top: 1px solid;
   margin-top: 1.5em;
 }
+h4 { 
+font-family: georgia, serif;
+font-weight: normal;
+font-size: 0.75em;
+color:#b37070
+}
 p.more {
   font-family: verdana, sans-serif;
   text-transform: uppercase; 
