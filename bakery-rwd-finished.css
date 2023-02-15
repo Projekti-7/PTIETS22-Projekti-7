@@ -54,7 +54,6 @@ html {
   }
 }
 
-
 /*Tää on se pullo */
 .animation {
   position: absolute;
@@ -76,6 +75,7 @@ html {
     height: 100%;
   }
 }
+
 
 body {
   font-family: Verdana, Arial, serif;
