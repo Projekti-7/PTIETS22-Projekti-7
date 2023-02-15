@@ -1,7 +1,9 @@
 /* to-do-list:
 header ei täytä koko leveyttä etusivulla (???) kertokaa jos tiedätte miks
 korjaa kuva etusivulla/uus tsydeemi
-omat menulinkit puhelimelle */
+omat menulinkit puhelimelle 
+Pullo skaalautuu huonosti kännykällä
+*/
 
 
 @charset "UTF-8";
@@ -17,6 +19,63 @@ html {
 * {
   box-sizing: inherit;
 }
+
+/* Tää on se logo oikees yläulmas */
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+/* Jos hiiri on logon pääl se on vähän läpinäkyvä */
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* Tabletilla logo on vähän alempana */
+@media screen and (max-width: 820px) {
+  .logo {
+    top: 3%;
+  }
+}
+
+
+/*Kännykällä logo siirtyy keskelle ja sitä ei voi klikata */
+@media screen and (max-width: 768px) {
+  .logo {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+  }
+}
+
+/*Tää on se pullo */
+.animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  width: 60%;
+  height: auto;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+/* Jos kännykän näytöllä pullo näkyy vähän korkeammalla */
+@media screen and (max-width: 768px) {
+  .animation {
+    top: 40%;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 
 body {
   font-family: Verdana, Arial, serif;
