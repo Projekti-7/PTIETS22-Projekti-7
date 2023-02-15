@@ -18,6 +18,19 @@ html {
   box-sizing: inherit;
 }
 
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
 body {
   font-family: Verdana, Arial, serif;
   font-size: 100%;
