@@ -34,6 +34,12 @@ html {
   opacity: 0.8;
 }
 
+
+/* menu esimerkki
+.navigointi{
+  display:none;
+} */
+
 /* Tabletilla logo on vähän alempana */
 @media screen and (max-width: 820px) {
   .logo {
