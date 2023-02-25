@@ -149,7 +149,13 @@ nav ul li a {
   padding: .5em 1em; 	
   border-radius: .5em; 
   margin: .25em; 
-  } 	
+  } 
+ol, ul { 
+    list-style-type: none;
+  }
+ol, ul { 
+    list-style-type: none;
+}
 
 
 /* main "products" styles */
