@@ -198,7 +198,11 @@ main img {
 }
 /*
 
-
+/* text styles (products etc.) */
+.text{
+  font-family: Georgia, serif;
+  margin-left: 50px;
+}
 
 
 /* aside "hours" styles */
