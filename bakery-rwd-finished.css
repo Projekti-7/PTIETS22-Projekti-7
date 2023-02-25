@@ -201,6 +201,7 @@ main img {
 /* text styles (products etc.) */
 .text{
   font-family: Georgia, serif;
+  font-size: 1.20em;
   margin-left: 50px;
 }
 
