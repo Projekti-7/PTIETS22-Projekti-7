@@ -199,7 +199,7 @@ nav ul li {
  font-size: .8em;
   text-transform: uppercase;
   letter-spacing: .2em;
-  flex: 1 1 50%;
+  /* flex: 1 1 50%; */
 }
 nav ul li a { 	
   display: block; 	
