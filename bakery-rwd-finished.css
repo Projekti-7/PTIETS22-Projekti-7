@@ -125,13 +125,13 @@ html {
   left: 50%;
   right: 50%;
   bottom: 0;
-  width: 60%;
+  width: 100%;
   height: auto;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
 
-/* Jos kännykän näytöllä pullo näkyy vähän korkeammalla */
+/* Jos kännykän näytöllä pullo näkyy vähän korkeammalla 
 @media screen and (max-width: 768px) {
   .animation {
     top: 40%;
@@ -139,7 +139,7 @@ html {
     height: 100%;
   }
 }
-
+*/
 
 body {
   font-family: Verdana, Arial, serif;
