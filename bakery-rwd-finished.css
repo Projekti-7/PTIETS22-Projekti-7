@@ -111,6 +111,7 @@ html {
 @media screen and (max-width: 820px) {
   .logo {
     top: 3%;
+    display: none;
   }
 }
 
@@ -373,7 +374,7 @@ footer {
       "banner banner"
       "main hours"
       "footer footer";
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
     position: relative;
   }
@@ -384,14 +385,17 @@ footer {
     grid-area: main;
   }
   aside {
-    grid-area: hours;
     background: url(images/scallop.png) repeat-y left top;
     background-color: #F6F3ED;
     padding: 1em;
     padding-left: 45px;
+    margin-left: 50%;
   }
   footer {
     grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    min-width: 1920px;
   }
   #award { 	
     position: absolute; 	
