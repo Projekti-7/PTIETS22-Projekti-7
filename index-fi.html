@@ -28,8 +28,9 @@
 <nav>
   <ul>
     <li>
-      <a href="#" class="Menu">Menu</a>
+      <a button onclick="myFunction()" class="Menu">Menu</a></button>
       <ul class="dropdown">
+    <div id="myDiv">
     <li><a href="index-fi.html">Etusivu</a></li>
     <li><a href="Products-fi.html">Tuotteet</a></li>
     <li><a href="News-fi.html">Uutiset</a></li>
@@ -41,6 +42,17 @@
 </nav>  
   <h1>Janottaako? Ota BURST!</h1>
 </header>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDiv");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
 
  <!--Tää on pyörivä pullo-->
 <video class="animation" autoplay loop muted>

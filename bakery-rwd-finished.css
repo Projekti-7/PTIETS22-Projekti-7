@@ -39,10 +39,14 @@ html {
   margin-right: 10%;
 }
 
+/* menu esimerkki
+.navigointi{
+  display:none;
+} */
+
 @media screen and (max-width: 768px) {
   header {
     color: white;
-    /* background:  url(images/croissants_banner.jpg) no-repeat center center; */
     background: #262626;
     background-size: cover; 
     text-align: center;
@@ -77,7 +81,7 @@ html {
     text-align: center;
   }
   ul li ul.dropdown {
-    width: 100%;
+    width: 165%;
     background: #262626;
     position: absolute;
     z-index: 999;
@@ -94,6 +98,8 @@ html {
     text-align: center;
   }
 }
+
+
 
 @media screen and (min-width: 769px) {
   .Menu {
@@ -118,15 +124,19 @@ html {
     width: 100px;
     height: 100px;
     pointer-events: none;
-    display: none;
   }
 }
 
 /*Tää on se pullo */
 .animation {
   position: absolute;
+<<<<<<< Updated upstream
   top: 60%;
   left: 25%;
+=======
+  top: 50%;
+  left: 50%;
+>>>>>>> Stashed changes
   right: 50%;
   bottom: 0;
   width: 65%;
@@ -368,7 +378,7 @@ footer {
       "banner banner"
       "main hours"
       "footer footer";
-    /* max-width: 1200px; */
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
   }
@@ -379,18 +389,14 @@ footer {
     grid-area: main;
   }
   aside {
-    /* grid-area: hours; */
+    grid-area: hours;
     background: url(images/scallop.png) repeat-y left top;
     background-color: #F6F3ED;
     padding: 1em;
     padding-left: 45px;
-    margin-left: 50%;
   }
   footer {
     grid-area: footer;
-    position: fixed;
-    bottom: 0;
-    min-width: 1920px;
   }
   #award { 	
     position: absolute; 	
