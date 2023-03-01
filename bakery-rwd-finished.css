@@ -35,11 +35,6 @@ html {
 }
 
 
-/* menu esimerkki
-.navigointi{
-  display:none;
-} */
-
 @media screen and (max-width: 768px) {
   header {
     color: white;
@@ -115,6 +110,7 @@ html {
     width: 100px;
     height: 100px;
     pointer-events: none;
+    display: none;
   }
 }
 
@@ -122,7 +118,7 @@ html {
 .animation {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 25%;
   right: 50%;
   bottom: 0;
   width: 100%;
@@ -199,7 +195,7 @@ nav ul li {
  font-size: .8em;
   text-transform: uppercase;
   letter-spacing: .2em;
-  flex: 1 1 50%;
+  /* flex: 1 1 50%; */
 }
 nav ul li a { 	
   display: block; 	
@@ -354,7 +350,7 @@ footer {
       "banner banner"
       "main hours"
       "footer footer";
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
     position: relative;
   }
@@ -365,14 +361,18 @@ footer {
     grid-area: main;
   }
   aside {
-    grid-area: hours;
+    /* grid-area: hours; */
     background: url(images/scallop.png) repeat-y left top;
     background-color: #F6F3ED;
     padding: 1em;
     padding-left: 45px;
+    margin-left: 50%;
   }
   footer {
     grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    min-width: 1920px;
   }
   #award { 	
     position: absolute; 	
