@@ -29,8 +29,8 @@
   <ul>
     <li>
       <a button onclick="myFunction()" class="Menu">Menu</a></button>
+      <div id="myDiv">
       <ul class="dropdown">
-    <div id="myDiv">
     <li><a href="index-fi.html">Etusivu</a></li>
     <li><a href="Products-fi.html">Tuotteet</a></li>
     <li><a href="News-fi.html">Uutiset</a></li>
@@ -39,6 +39,7 @@
     <li><a href="index-en.html">Sivu englanniksi</a></li>
     <script src="logiikka.js"></script>
   </ul>
+      </div>
 </nav>  
   <h1>Janottaako? Ota BURST!</h1>
 </header>
@@ -46,10 +47,10 @@
 <script>
   function myFunction() {
     var x = document.getElementById("myDiv");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
       x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
   }
   </script>

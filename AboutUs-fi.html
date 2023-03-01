@@ -17,8 +17,8 @@
           <ul>
             <li>
               <a button onclick="myFunction()" class="Menu">Menu</a></button>
+              <div id="myDiv">
               <ul class="dropdown">
-            <div id="myDiv">
             <li><a href="index-fi.html">Etusivu</a></li>
             <li><a href="Products-fi.html">Tuotteet</a></li>
             <li><a href="News-fi.html">Uutiset</a></li>
@@ -26,16 +26,17 @@
             <li><a href="Feedback-fi.html">Palaute</a></li>
             <li><a href="AboutUs-en.html">Sivu englanniksi</a></li>
           </ul>
+          </div>
         </nav>  
     </header>
 
     <script>
       function myFunction() {
         var x = document.getElementById("myDiv");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
+        if (x.style.display === "block") {
           x.style.display = "none";
+        } else {
+          x.style.display = "block";
         }
       }
       </script>

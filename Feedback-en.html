@@ -18,8 +18,8 @@
           <ul>
             <li>
                 <a button onclick="myFunction()" class="Menu">Menu</a></button>
+                <div id="myDiv">
                 <ul class="dropdown">
-              <div id="myDiv">
             <li><a href="index-en.html">Frontpage</a></li>
             <li><a href="Products-en.html">Products</a></li>
             <li><a href="News-en.html">News</a></li>
@@ -27,16 +27,17 @@
             <li><a href="Feedback-en.html">Feedback</a></li>
             <li><a href="Feedback-fi.html">In Finnish</a></li>
           </ul>
+                </div>
         </nav>  
     </header>
 
     <script>
         function myFunction() {
           var x = document.getElementById("myDiv");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
+          if (x.style.display === "block") {
             x.style.display = "none";
+          } else {
+            x.style.display = "block";
           }
         }
         </script>
@@ -54,14 +55,14 @@
 
 
 
-<fieldset>
+<fieldset style="width: 375px;">
     <ul>
         <label for="free text">Let us know about your opinion:</label><br>
         <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="Type here"></textarea></li>
     </ul>
 </fieldset>
 
-<fieldset>
+<fieldset style="width: 375px;">
     <ul>
         <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
     </ul>

@@ -31,8 +31,8 @@
     <img src="burst.svg" class="logo" alt="Burst logo with mountain on the back and word burst in front">
     <li>
       <a button onclick="myFunction()" class="Menu">Menu</a></button>
+      <div id="myDiv">
       <ul class="dropdown">
-    <div id="myDiv">
     <li><a href="index-en.html">Frontpage</a></li>
     <li><a href="Products-en.html">Products</a></li>
     <li><a href="News-en.html">News</a></li>
@@ -41,6 +41,7 @@
     <li><a href="index-fi.html">In Finnish</a></li>
     <script src="logiikka.js"></script>
   </ul>
+      </div>
 </nav>  
   <h1>Got a thirst? Get ready to BURST!</h1>
 </header>
@@ -48,10 +49,10 @@
 <script>
   function myFunction() {
     var x = document.getElementById("myDiv");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
+    if (x.style.display === "block") {
       x.style.display = "none";
+    } else {
+      x.style.display = "block";
     }
   }
   </script>
