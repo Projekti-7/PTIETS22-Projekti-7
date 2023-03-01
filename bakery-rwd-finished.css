@@ -34,6 +34,10 @@ html {
   opacity: 0.8;
 }
 
+.Ryhmäkuva {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 @media screen and (max-width: 768px) {
   header {
@@ -85,6 +89,10 @@ html {
   ul li:hover ul.dropdown {
     display: block;
   }
+
+  .Mobiiliotsikko {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -117,14 +125,25 @@ html {
 /*Tää on se pullo */
 .animation {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 25%;
   right: 50%;
   bottom: 0;
-  width: 100%;
-  height: auto;
+  width: 65%;
+  height: 65%;
   pointer-events: none;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .animation {
+    display: none;
+  }
+
+  .Ryhmäkuva {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /* Jos kännykän näytöllä pullo näkyy vähän korkeammalla 
@@ -145,8 +164,8 @@ body {
 }
 
 /* link styles */
-a:link, a:visited { color: #DC6903; }
-a:focus, a:hover, a:active { color: #F9AB33; }
+a:link, a:visited { color: #000000; }
+a:focus, a:hover, a:active { color: #33f9f9; }
 
 a {
  text-decoration: none;
@@ -256,7 +275,8 @@ main img {
 .text{
   font-family: Georgia, serif;
   font-size: 1.20em;
-  margin-left: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 
@@ -284,9 +304,7 @@ footer {
   background: yellow;
 } 
 
-.Ryhmäkuva {
-  margin-left: 50px;
-}
+
 
 @media screen and (min-width: 400px) {
   nav ul li {
